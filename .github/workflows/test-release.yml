@@ -104,7 +104,7 @@ jobs:
           APPLE_ID: ""
           APPLE_PASSWORD: ""
           APPLE_TEAM_ID: ""
-        run: npx tauri build --target ${{ matrix.target }} --config src-tauri/tauri.release.conf.json
+        run: npx tauri build --target ${{ matrix.target }}
 
       - name: Collect macOS artifacts
         if: runner.os == 'macOS'
